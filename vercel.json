@@ -1,0 +1,12 @@
+{
+	"version": 1,
+	"framework": "node",
+	"name": "express_auth",
+	"builds": [
+		{
+			"src": "index.js",
+			"use": "@vercel/node"
+		}
+	],
+	"routes": [{ "src": "/(.*)", "dest": "/index.js" }]
+}
